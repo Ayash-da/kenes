@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кеңестер - Bilimgoo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-violet-100 to-white text-gray-800 font-sans">
+
+  <!-- Навигация -->
+  <header class="bg-violet-800 text-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <img src="/image/log1.jpg" alt="Bilimgoo Logo" class="w-10 h-10 rounded-full" />
+        <h1 class="text-2xl font-bold">Bilimgoo</h1>
+      </div>
+
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="bilimgo.html" class="hover:text-violet-300">Басты бет</a>
+        <a href="okuluk.html" class="hover:text-violet-300">Оқулықтар</a>
+        <a href="ubt.html" class="hover:text-violet-300">ҰБТ</a>
+        <a href="professia.html" class="hover:text-violet-300">Профессия</a>
+        <a href="kenes.html" class="text-violet-200 underline">Кеңестер</a>
+        <a href="#" class="hover:text-violet-300">Мотивация</a>
+      </nav>
+
+      <!-- Auth buttons -->
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="bg-white text-violet-800 px-4 py-1 rounded hover:bg-violet-200">Кіру</a>
+        <a href="#" class="bg-violet-600 px-4 py-1 rounded hover:bg-violet-700">Тіркелу</a>
+      </div>
+
+      <!-- Mobile menu toggle -->
+      <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+        ☰
+      </button>
+    </div>
+
+    <!-- Мобильдік меню -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+      <a href="bilimgo.html" class="block">Басты бет</a>
+      <a href="okuluk.html" class="block">Оқулықтар</a>
+      <a href="ubt.html" class="block">ҰБТ</a>
+      <a href="professia.html" class="block">Профессия</a>
+      <a href="#" class="block underline">Кеңестер</a>
+      <a href="#" class="block">Мотивация</a>
+      <div class="pt-2 border-t border-violet-600">
+        <a href="#" class="block mt-2">Кіру</a>
+        <a href="#" class="block">Тіркелу</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Кеңестер карточкалары -->
+  <main class="container mx-auto py-10 px-4 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300 border-t-4 border-violet-500">
+      <h2 class="text-xl font-semibold mb-2">📚 Оқу жоспары жаса</h2>
+      <p class="text-gray-600">Уақытты дұрыс бөл. Әр күнге нақты тапсырмалар жазып отыр. Оқу – жүйелілікпен келеді.</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300 border-t-4 border-pink-500">
+      <h2 class="text-xl font-semibold mb-2">🎯 Мақсат қой</h2>
+      <p class="text-gray-600">"ҰБТ-да 100+ балл жинаймын", "IT саласында оқимын" дегендей нақты, өлшенетін мақсаттар жазып қой.</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300 border-t-4 border-blue-500">
+      <h2 class="text-xl font-semibold mb-2">🧠 Лайфхак: Pomodoro әдісі</h2>
+      <p class="text-gray-600">25 минут оқу + 5 минут үзіліс. Миың тез үйренуге бейімделеді!</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300 border-t-4 border-green-500">
+      <h2 class="text-xl font-semibold mb-2">🌱 Өзіңе күтім жаса</h2>
+      <p class="text-gray-600">Ұйқы, спорт, таза ауа — барлығы сенің оқу үлгеріміңе әсер етеді. Миың демалуы керек!</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300 border-t-4 border-yellow-500">
+      <h2 class="text-xl font-semibold mb-2">💡 Пайдалы ресурстар</h2>
+      <p class="text-gray-600">"Qaztest", "ҰБТ 2025", "Motivatsiya TV" – білімге шабыт беретін тегін ресурстарды пайдалан!</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition duration-300 border-t-4 border-indigo-500">
+      <h2 class="text-xl font-semibold mb-2">🤝 Достармен бірге оқы</h2>
+      <p class="text-gray-600">Бірге дайындалу – мотивация мен білімді терең түсінуге көмектеседі.</p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer style="background-color:#5e2c7c;color: white;text-align:center;padding: 30px;margin-top: 45px;">
+    Bilimgoo — Барлығы білім үшін!
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
